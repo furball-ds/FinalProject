@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bgtest2;
+package FinalDsAssignment;
 
 import java.util.*;
 import javax.swing.JFrame;
@@ -12,7 +12,7 @@ import javax.swing.JFrame;
  *
  * @author Zakkir
  */
-public class Djikstra {
+public class DjikstraFinal {
 
     private int distance[];// array for distances for each node
     private int time[];
@@ -21,7 +21,7 @@ public class Djikstra {
     private PriorityQueue<Node> pq;
     List<List<Node>> adj; //list for adjacent nodes
 
-    public Djikstra(int V) {
+    public DjikstraFinal(int V) {
         this.V = V;
         distance = new int[V];
         time = new int[V];
@@ -115,7 +115,7 @@ public class Djikstra {
                 adj.get(nodeID).add(new Node(connectedID, edgeDist, time));
             }
         }
-        System.out.println(adj.get(0).get(0).costD);
+        //System.out.println(adj.get(0).get(0).costD);
 
         // PART 2, to get shortest path : 
         ArrayList<String> sp = new ArrayList<>();
@@ -125,7 +125,7 @@ public class Djikstra {
         int numOfMessages = UserInput.nextInt();
 
         for (int count = 0; count < numOfMessages; count++) {
-            Djikstra test = new Djikstra(V); //new one has to be created to refresh the list
+            DjikstraFinal test = new DjikstraFinal(V); //new one has to be created to refresh the list
             System.out.print("Source and destination of the message? ");
             source = UserInput.nextInt();
             destination = UserInput.nextInt();
