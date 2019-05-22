@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bgtest2;
+package FinalDsAssignment;
 
 import javax.swing.JPanel;
 import java.awt.*;
